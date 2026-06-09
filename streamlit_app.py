@@ -11,7 +11,7 @@ import numpy as np
 try:
     with open('movie_data.pkl', 'rb') as f:
         new_df = pickle.load(f)
-    with open('similarity_matrix.pkl', 'rb') as f:
+    with open('tfidf_vectorizer.pkl', 'rb') as f:
         similarity = pickle.load(f)
 
     # Convert similarity from list to numpy array if it was stored as list of lists
